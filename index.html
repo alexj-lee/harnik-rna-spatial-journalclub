@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>the gut</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/simple.css">
+	<link rel="stylesheet" href="dist/styles.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+
+			<section data-background="assets/network.jpg" data-background-opacity=0.3>
+				<br> <br>
+				<h2 style="font-size: 100px"> Spatial discordances between mRNAs and proteins in the intestinal
+					epithelium
+					<img src="public/titlecard.png"
+						style="width: 60%; height: auto; position: relative; top: 4rem; left:0rem; padding: 0; margin:0">
+				</h2>
+				<br>
+				<br>
+				QBC JC
+				<br>
+				Alex Lee
+			</section>
+
+			<section>
+				<h3> Single cell transcriptomic approaches have dramatically increased our ability to characterize
+					cellular phenotypes </h3>
+
+				<img src="public/mouseatlas.png">
+				<p style="font-size:3.5rem"> UMAP of 400,000 cell scRNA-seq in mouse motor cortex </p>
+			</section>
+
+			<section>
+				<h3> scRNA-seq data acts as a proxy for the functional information in the
+					cellular proteome </h3>
+				<div class="r-stack">
+					<div>
+						<h3 class="fragment"> <br> <br> How correspondent are protein and RNA-level measurements? <br>
+							<br>
+						</h3>
+						<h3 class="fragment"> <br> <br> What are the instances where protein and transcriptomic
+							measurements are
+							discordant? </h3>
+					</div>
+				</div>
+			</section>
+
+
+			<section>
+				<h3> Hypothesis: discordance between RNA and protein is a function of protein stability </h3>
+
+				<div class="multiCol">
+					<div class="littleCol">
+						<img style="position:relative; top:-6rem; left:-4rem; padding:0; margin:0; width:60%; height:auto"
+							src="public/simple-fig1.png">
+					</div>
+					<div class="bigCol">
+						<div class="r-stack">
+							<div style="padding:0; margin:0" class="fragment fade-in-then-out">
+								<div class="multiCol">
+									<div class="col">
+										<img style="position:relative; top:-4rem; left:-10rem; padding:0; margin:0; max-width:120%; width:150%; height:auto"
+											src="public/stableprotein2.png">
+									</div>
+									<p> <br> <br> Proteins that are degraded or
+										secreted
+										quickly need to be
+										remade: <br> <br> high
+										mRNA/protein correlation </p>
+								</div>
+							</div>
+
+
+							<div style="padding:0;margin:0" class="fragment fade-in-then-out">
+								<div class="multiCol">
+									<div class="col">
+										<img style="position:relative; top:-4rem; left:-10rem; padding:0; margin:0; max-width:120%; width:150%; height:auto"
+											src="public/unstableprotein2.png">
+									</div>
+									<p> <br> <br> Proteins that are not degraded or secreted: <br> <br> <br> low
+										mRNA/protein correlation
+									</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+
+			</textarea>
+			</section>
+
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script src="plugin/chalkboard/plugin.js"></script>
+	<script src="plugin/customcontrols/plugin.js"></script>
+	<script src="plugin/pointer/pointer.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+			center: true,
+			margin: 0,
+			padding: 0,
+			width: 1920,
+			height: 1080,
+			minScale: 0.2,
+			maxScale: 1.5,
+			keyboard: true,
+			overview: true,
+			pointer: {
+				key: "q",
+				color: "red",
+				pointerSize: 23,
+				alwaysVisible: false
+			},
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealChalkboard]
+		});
+	</script>
+</body>
+
+</html>
