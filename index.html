@@ -11,6 +11,10 @@
 	<link rel="stylesheet" href="dist/reveal.css">
 	<link rel="stylesheet" href="dist/theme/simple.css">
 	<link rel="stylesheet" href="dist/styles.css">
+	<link rel="stylesheet" href="plugin/pointer/pointer.css" />
+	<link rel="stylesheet" href="plugin/chalkboard/style.css">
+	<link rel="stylesheet" href="plugin/customcontrols/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 	<!-- Theme used for syntax highlighted code -->
 	<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -102,6 +106,306 @@
 
 
 
+			<section>
+				<h3> Background for model system: dynamic, zoned intestinal epithelium </h3>
+				<div class="multiCol">
+					<div class="col">
+						<div class="r-stack">
+							<img class="fragment fade-in-then-out" data-fragment-index="1"
+								src="public/crypt-vs-villus.png" style="max-width:250%; width:100%; height:auto">
+							<img class="fragment fade-in-then-out" data-fragment-index="2"
+								src="public/villi-gradients.png" style="max-width:250%; width:100%; height:auto">
+							<img class="fragment fade-in-then-out" data-fragment-index="3"
+								style="max-width:1000%; width:100%; height: auto"
+								src="public/villi-migration-cropped.png">
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="r-stack">
+
+							<span class="fragment fade-in-then-out" data-fragment-index="1">
+								<br>
+								<p style="font-size:3rem"> two intestine cell (enterocyte) regions of interest </p>
+								<ul style="font-size:3rem">
+									<br>
+									<li> crypts </li>
+									<li> villi </li>
+								</ul>
+							</span>
+
+							<br>
+							<br>
+							<ul class="fragment fade-in-then-out" data-fragment-index="2" style="font-size:3rem">
+								<br>
+								<br>
+								not at steady state:
+								<li style="margin-left: 5rem"> oxygen gradient </li>
+								<li style="margin-left: 5rem"> cytokine gradient </li>
+								<li style="margin-left: 5rem"> morphogen gradients (Wnt, Notch, BMP) </li>
+								<li style="margin-left: 5rem"> (not pictured) microbe gradient </li>
+							</ul>
+
+							<ul class="fragment fade-in-then-out" data-fragment-index="3" style="font-size:3rem">
+								<br>
+								<p> enterocytes constantly being created and migrating, lose adhesion protein at top and
+									pop off
+								</p>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section>
+				<section>
+					<h3> What are the molecular techniques used in this study? <br> </h3>
+
+					<div style="transform: scale(1.2,1.2)">
+						<br>
+						<img style=" position:relative; top:1rem; left:-5rem; padding:0; margin:0"
+							src="public/fig2a.png" class="fragment">
+						<img style="position:relative; top:0rem; left:-5rem; padding:0; margin:0" src="public/fig2b.png"
+							class="fragment">
+						<img style="position:relative; top:0rem; padding:0; margin:0; left:-5rem" src="public/fig2c.png"
+							class="fragment">
+					</div>
+				</section>
+
+
+				<section>
+					<h3> What does spatial sorting scheme look like in data? </h3>
+					<img src="public/fig3-erased.png">
+					<p> Intestinal villi from several mice were dissected, dissociated, and sorted <br> bulk RNA-seq
+						profiles
+						for e/ gene correlate well with previous scRNA-seq dataset using laser capture microdissection
+						(subfig f.)
+					</p>
+					<p> measured 100k cells, 24k peptides --> 3k proteins </p>
+				</section>
+
+			</section>
+			<section>
+				<section>
+					<h3 style="font-size:3.5rem"> Proteomic transcriptomic data reveals zonated proteins that are
+						discordant with
+						mRNA </h3>
+
+					<div class="r-stack">
+
+						<div class="fragment fade-in-then-out" data-fragment-index="1"
+							style="transform: scale(1.4,1.4)">
+							<br>
+							<br>
+							<br>
+							<img src="public/fig4part1a.png" style="height:auto; width:100%; max-width:30%">
+							<img src="public/fig4part2.png"
+								style="height:auto; width: 100%; max-width:30%; position:relative; top:-3rem">
+						</div>
+						<div class="fragment fade-in-then-out" data-fragment-index="2">
+
+							<h4 style="font-size:3rem"> "centers" of protein or RNA density are specific to genes </h4>
+							<img src="public/fig5part1.png"
+								style="height:auto; width:160%; max-width:160%; position:relative; right:20rem"
+								class="public/fragment fade-in-then-out" data-fragment-index="2">
+						</div>
+
+
+					</div>
+				</section>
+
+
+
+				<section>
+					<h3> Example with SGLT1 (protein) vs Slc5a1 (transcript) </h3>
+					<img src="public/protein-rna-IF-ex.png">
+				</section>
+			</section>
+
+			<section>
+				<h3> Mathmatical modeling of translation, degradation/secretion </h3>
+				<div class="multiCol">
+					<div class="col">
+						<br>
+						<br>
+						<div class="r-stack" style="transform: scale(1.2, 1.2)">
+							<img class="fragment fade-in-then-out" src="public/mathmodel1.png" data-fragment-index="1"
+								style="height:170%; width:auto; max-height:170%; max-width:170%">
+							<img class="fragment fade-in-then-out" src="public/mathmodel2.png" data-fragment-index="2"
+								style="height:170%; width:auto; max-height:170%; max-width:170%">
+							<img class="fragment fade-in-then-out" src="public/mathmodel3.png" data-fragment-index="3"
+								style="height:170%; width:auto; max-height:170%; max-width:170%">
+							<img class="fragment fade-in-then-out" src="public/mathmodel4.png" data-fragment-index="4"
+								style="height:170%; width:auto; max-height:170%; max-width:170%">
+						</div>
+					</div>
+
+					<div class="col">
+						<ul>
+							<br> <br> <br>
+							<li class="fragment" data-fragment-index="1"> at each level of the villus, we use mRNA to
+								predict the
+								protein levels at the next level </li>
+							<li class="fragment" data-fragment-index="1"> parameters: </li>
+							<ul>
+								<li class="fragment" data-fragment-index="2"> $\beta$ : tells you how much translation
+									is occurring</li>
+								<li class="fragment" data-fragment-index="3"> $\delta$ : tells you how much protein
+									degradation/secretion is
+									occurring </li>
+								<li class="fragment" data-fragment-index="4"> $t_{1/2}$ : tells you how unstable the
+									protein is on its
+									own </li>
+							</ul>
+
+						</ul>
+
+					</div>
+				</div>
+			</section>
+
+
+			<section>
+				<h3> Bayesian model fitting allows for incorporation of literature knowledge </h3>
+				<div class="multiCol">
+					<br> <br> <br>
+					<div class="r-stack" style="transform: scale(1.1, 1.1)">
+						<img src="public/mathmodel1.png" data-fragment-index="1"
+							style="height:170%; width:auto; max-height:170%; max-width:170%">
+					</div>
+
+					<div class="col" style="font-size:2.5rem">
+						<ul>
+							<br>
+							<li> range of values observed for degradation/secretion + translation is used to enforce a
+								range of likely
+								values for the model </li>
+							<br>
+							<li> 4287 translation rates from literature </li>
+							<br>
+							<li> 5028 decay rates from literature</li>
+							<br>
+							<li> Bayesian formulation also allows for uncertainy estimates of $\beta$ and $\delta$</li>
+
+						</ul>
+
+					</div>
+				</div>
+			</section>
+
+
+			<section>
+				<h3> Model fits well, identifies different classes of concordant/discordant species </h3>
+				<div class="r-stack">
+					<div class="fragment fade-in-then-out" data-fragment-index="1">
+						<div class="multiCol">
+							<div class="col">
+								<img src="public/example-fit.png">
+							</div>
+							<p style="font-size:4rem"> <br> <br> <br> <br> <span style="color:red"> Red (data) </span>
+								and
+								<span style="color:gray"> gray (model) </span> shaded portions should line up if model
+								fits
+								well
+							</p>
+						</div>
+					</div>
+					<div class="fragment fade-in-then-out" style="font-size: 1.7rem" data-fragment-index="2">
+						<img src="public/fig6timeseries.png">
+						<p style="font-size:2.5rem"> between 93-97% of genes pass goodness of fit (FDR 0.25) </p>
+						<p style="font-size:2.5rem"> global degradation term doesn't improve model fit </p>
+					</div>
+
+					<div class="fragment" style="width:100%">
+						<img src="public/fig6histograms.png" style="height: auto; width: 100%; max-width: 8000%">
+						<p style="font-size:4rem"> correlations between translation rate, degradation rate depends on
+							protein
+							stability </p>
+
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<h4 style="font-size: 4rem"> Model fit failures also qualitatively OK <br> </h4>
+				<p style="font-size:3rem"> Dotted line is "best" model fit (MAP parameter estimate) <br> <br> <br></p>
+
+				<img style="transform: scale(1.4,1.4)" src="public/bad-fits.png">
+
+			</section>
+
+			<section>
+				<section>
+					<h4 style="font-size:4.5rem"> Moderate correlations with existing literature values </h4>
+
+					<p> Only R=0.31 for previous ribosome profiling data with translation parameter estimates </p>
+					<p> Estimated protein half-life R=0.22 for radiolabeled mouse intestine proteomic data <br> <br>
+						<br> <br>
+					</p>
+
+					<div class="r-stack" style="transform: scale(1.1,1.1)">
+						<br> <br>
+						<div class="multiCol">
+							<div class="col">
+
+								<img class="fragment fade-in-then-out" src="public/fig7suppb.png"
+									style="height:auto; width:100%; max-width:100%; position:relative; top:-7rem">
+							</div>
+							<p> <br> <br> short lived proteins: DNA rep, glycans, KRAS </p>
+							<p> long lived: drug met, ROS, Myc targets, ribosome stuff </p>
+						</div>
+					</div>
+				</section>
+
+
+				<section>
+					<h3> How about the intestine in general? </h3>
+
+					<div class="multiCol">
+						<div class="col">
+							<img src="public/fig7.png" style="max-width:120%; width:120%; height:auto">
+						</div>
+
+						<div class="col">
+							<ul>
+								<li> 40% of zonated genes (~55% of genes in study sample) have protein, mRNA
+									anticorrelated </li>
+								<li> suggestive there is a division of labor from transcribing / translating machinery
+									at bottom, to
+									creating absorption machinery at top of villus</li>
+								<li> surprisingly respiration proteins high at the top (where there is no oxygen); also
+									high levels of
+									glutathione enzymes to protect against oxidation </li>
+							</ul>
+						</div>
+					</div>
+
+				</section>
+			</section>
+
+			<section>
+				<h3> Conclusions </h3>
+				<ul>
+					<li> enterocyte expression/protein levels can be broken into discrete categories based on zone </li>
+					<li> global relationships across all transcripts/proteins not necessary to explain discordance </li>
+					<br>
+				</ul>
+
+				<h3> Future directions </h3>
+				<ul>
+					<li> would be great to follow up with specific exploration of what protein or transcript level
+						characteristics
+						influence translation or degradation rates</li>
+					<li> follow up on understanding what sorts of pathways are interacting intracellularly to create
+						different
+						cell states along the villus</li>
+				</ul>
+
+			</section>
+
+
+
 
 			</textarea>
 			</section>
@@ -113,10 +417,12 @@
 	<script src="plugin/notes/notes.js"></script>
 	<script src="plugin/markdown/markdown.js"></script>
 	<script src="plugin/highlight/highlight.js"></script>
+	<script src="plugin/pointer/pointer.js"></script>
+	<script src="plugin/math/math.js"></script>
+	<script src="plugin/notes/notes.js"></script>
 	<script src="plugin/chalkboard/plugin.js"></script>
 	<script src="plugin/customcontrols/plugin.js"></script>
-	<script src="plugin/pointer/pointer.js"></script>
-	<script src="plugin/notes/notes.js"></script>
+
 	<script>
 		// More info about initialization & config:
 		// - https://revealjs.com/initialization/
@@ -135,12 +441,12 @@
 			pointer: {
 				key: "q",
 				color: "red",
-				pointerSize: 23,
+				pointerSize: 15,
 				alwaysVisible: false
 			},
 
 			// Learn about plugins: https://revealjs.com/plugins/
-			plugins: [RevealMarkdown, RevealHighlight, RevealChalkboard]
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX, RevealPointer, RevealChalkboard]
 		});
 	</script>
 </body>
